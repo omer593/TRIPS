@@ -1,0 +1,13 @@
+/* RegisterPage.css */
+
+.register-form {
+  @apply max-w-md mx-auto bg-white p-8 rounded-2xl shadow-lg border border-gray-200;
+}
+
+.register-form input {
+  @apply form-input mb-4;
+}
+
+.register-form button {
+  @apply btn-primary w-full;
+}

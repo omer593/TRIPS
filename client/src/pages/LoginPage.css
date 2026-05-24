@@ -1,0 +1,74 @@
+/* LoginPage.css */
+
+.login-container {
+  max-width: 400px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  direction: rtl;
+  font-family: 'Inter', sans-serif;
+}
+
+.login-container h2 {
+  font-size: 2rem;
+  color: #1e40af; /* כחול עמוק */
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.login-container form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input {
+  padding: 0.75rem 1rem;
+  margin-bottom: 1rem;
+  border: 1.5px solid #cbd5e1; /* צבע אפור בהיר */
+  border-radius: 0.75rem;
+  font-size: 1rem;
+  transition: border-color 0.3s ease;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #2563eb; /* כחול בהיר בעת פוקוס */
+  box-shadow: 0 0 5px rgba(37, 99, 235, 0.5);
+}
+
+.btn-primary {
+  background-color: #2563eb; /* כחול */
+  color: white;
+  font-weight: 600;
+  padding: 0.75rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 1rem;
+}
+
+.btn-primary:hover {
+  background-color: #1d4ed8; /* כחול כהה יותר */
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(37, 99, 235, 0.4);
+}
+
+.login-container p {
+  margin-top: 1rem;
+  text-align: center;
+  font-size: 0.95rem;
+  color: #4b5563; /* אפור כהה */
+}
+
+.login-container a {
+  color: #2563eb;
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.login-container a:hover {
+  color: #1d4ed8;
+}

@@ -1,0 +1,239 @@
+/* PlanTrip.css */
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: linear-gradient(135deg, #dbeafe 0%, #d1fae5 100%);
+  margin: 0;
+  padding: 0;
+  direction: ltr;
+}
+
+.container {
+  max-width: 96rem; /* 6xl */
+  margin: 2rem auto;
+  padding: 1.5rem;
+}
+
+.card {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 2rem;
+  margin-bottom: 2rem;
+}
+
+h1, h2, h3 {
+  color: #1e293b; /* slate-800 */
+  margin-bottom: 1rem;
+}
+
+h1 {
+  font-size: 2.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+h2 {
+  font-size: 1.75rem;
+}
+
+h3 {
+  font-size: 1.25rem;
+}
+
+input[type="text"], input[type="email"], input[type="password"], textarea {
+  width: 100%;
+  padding: 0.75rem 1rem;
+  font-size: 1rem;
+  border: 1.5px solid #cbd5e1; /* gray-300 */
+  border-radius: 0.75rem;
+  transition: border-color 0.3s ease;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  outline: none;
+  border-color: #22c55e; /* green-500 */
+  box-shadow: 0 0 6px rgba(34, 197, 94, 0.5);
+}
+
+label {
+  font-weight: 600;
+  color: #475569; /* gray-600 */
+  margin-bottom: 0.5rem;
+  display: block;
+}
+
+button {
+  background: linear-gradient(90deg, #2563eb 0%, #7c3aed 100%);
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 0.75rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.15s ease;
+  width: 100%;
+  margin-top: 1.5rem;
+  box-shadow: 0 4px 15px rgba(37, 99, 235, 0.4);
+}
+
+button:disabled {
+  background: #94a3b8; /* gray-400 */
+  cursor: not-allowed;
+  box-shadow: none;
+}
+
+button:hover:not(:disabled) {
+  background: linear-gradient(90deg, #1e40af 0%, #6b21a8 100%);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(37, 99, 235, 0.6);
+}
+
+.grid-2cols {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+}
+
+.radio-group {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 0.5rem;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+  font-weight: 500;
+  color: #334155; /* gray-700 */
+}
+
+.radio-label input[type="radio"] {
+  accent-color: #2563eb;
+  cursor: pointer;
+  width: 18px;
+  height: 18px;
+}
+
+.info-box {
+  background: #e0f2fe; /* blue-100 */
+  padding: 1.5rem;
+  border-radius: 1rem;
+  color: #0c4a6e; /* blue-900 */
+  box-shadow: 0 5px 10px rgba(14, 116, 144, 0.1);
+  margin-bottom: 2rem;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stats-card {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+}
+
+.stats-card .title {
+  font-size: 0.875rem;
+  color: #64748b; /* gray-500 */
+  margin-bottom: 0.25rem;
+}
+
+.stats-card .value {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #2563eb; /* blue-600 */
+}
+
+.stats-card.type {
+  color: #7c3aed; /* purple-600 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 700;
+}
+
+.day-card {
+  background: white;
+  padding: 1rem 1.5rem;
+  border-radius: 0.75rem;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.07);
+}
+
+.day-header {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.day-distance {
+  margin-left: auto;
+  font-size: 0.875rem;
+  color: #64748b;
+}
+
+.route-text {
+  color: #334155;
+  font-size: 1rem;
+}
+
+.map-container {
+  background: white;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  padding: 1rem;
+  height: 400px;
+  margin-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #64748b;
+  font-style: italic;
+  text-align: center;
+}
+
+.save-route-form {
+  background: white;
+  padding: 2rem;
+  border-radius: 1rem;
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.save-route-form h3 {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #16a34a; /* green-600 */
+  margin-bottom: 1rem;
+}
+
+.save-route-form .grid-2cols {
+  margin-bottom: 1rem;
+}
+
+.save-route-form input[type="text"] {
+  border-color: #d1fae5; /* green-100 */
+}
+
+.save-route-form input[type="text"]:focus {
+  border-color: #16a34a; /* green-600 */
+  box-shadow: 0 0 6px rgba(22, 163, 74, 0.5);
+}
